@@ -274,6 +274,7 @@ h3 {
     text-align:center;
     margin-left: 10px;
     margin-right: 10px;
+    opacity: 0.80;
 }
 
 .pret {
@@ -586,8 +587,8 @@ a {
     .informatie {
         top: 50%;
         transform: translate(0%,-50%);
-        margin-left: 80px;
-        margin-right: 80px;
+        margin-left: 83px;
+        margin-right: 83px;
         font-size: 13px;
     }
 
