@@ -235,6 +235,7 @@ h3 {
     object-fit: cover;
     object-position: 50% center;
     border-radius: 20px;
+    opacity: 0.90;
 }
 
 .img-container {
@@ -274,7 +275,6 @@ h3 {
     text-align:center;
     margin-left: 10px;
     margin-right: 10px;
-    opacity: 0.80;
 }
 
 .pret {
