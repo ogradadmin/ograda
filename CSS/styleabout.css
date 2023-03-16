@@ -1,0 +1,617 @@
+body::-webkit-scrollbar {
+    width: 7px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    background-color: #202020;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #FBD5B2;
+  }
+
+  html {
+    height: 100%;
+}
+
+  body {
+    background-image:linear-gradient(to right,#ffffffa2,#ffffff,#ffffff,#ffffff,#ffffffa2) , url(../img/background-03.png);
+    background-size: cover;
+    background-repeat: repeat-y;
+    z-index: -1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+
+/*Fonts*/
+
+@font-face {
+    font-family: 'Uniser';
+    src: url(../fonts/uniser-uniser-bold-700.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Uniser';
+    src: url(../fonts/Uniser\ Bold.ttf) format('truetype');
+    font-weight: bold;
+}
+
+/*Header*/
+
+.header {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    transition: background-color 0.4s;
+    background-color: transparent;
+    z-index: 2;
+}
+
+@media (hover:hover) {
+    .header:hover {
+        background-color: #4B1218;
+    
+    }
+    
+    .header:hover .logo-color {
+        z-index: 2;
+    }
+}
+
+.header.active {
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4B1218;
+}
+
+.logo-color.active {
+    z-index: 2;
+}
+
+/*Since*/
+.since-holder {
+    margin: 1%;
+}
+.since {
+    color: white;
+    font-family: 'Uniser';
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-align: center;
+}
+/*Logo*/
+
+.logo-holder a {
+    cursor: default;
+}
+
+.logo-color {
+    z-index: -1;
+    height: 70px;
+    width: 70px;
+    margin-left: 161px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    margin-left: 230%;
+}
+
+/*Background*/
+.background-image {
+    position: relative;
+}
+
+/*Navigatie*/
+
+.nav-links {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #FBD5B2;
+    display: block;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.nav-links ul li a {
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Uniser';
+    font-weight: bold;
+    font-size: 25px;
+    transition: border-width 0.5s;
+}
+
+#au {
+    color: #FBD5B2;
+}
+
+/*Titlu*/
+.title  {
+    width: 20%;
+    height: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-80%);
+    object-fit: cover;
+}
+
+.title img {
+    width: 100%;
+}
+/*Small touches*/
+
+.small-animation {
+    display: block;
+    position: relative;
+}
+
+.vertical-line {
+    margin-top: 20px;
+    position: relative;
+    height: 210px;
+    width: 3px;
+    left: 50%;
+    background-color: #ecc097;
+    animation-name: test;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes test {
+    0% {
+        transform: scaleY(1) translateY(0);
+    }
+
+    50% {
+        transform: scaleY(0.50) translateY(20%);
+    }
+
+    100% {
+        transform: scaleY(1) translateY(0);
+    }
+}
+
+/* Content - About Us*/
+
+.about-us-director {
+    margin-top: 25px;
+    margin-left: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.about-us-director p {
+    text-align: center;
+    font-size: 28px;
+    margin-right: 25px;
+
+}
+
+ h3 {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 70px;
+    font-family: 'Uniser';
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #4B1218;
+    text-align: center;
+}
+
+.image-wrapper {
+    overflow: hidden;
+    aspect-ratio: 1.22/1;
+}
+
+.imgnoi {
+    width: 100%;
+    max-width: 560px;
+}
+
+.text-arranger {
+    width: 40%;
+    display: block;
+    position: relative;
+    align-content: center;
+    aspect-ratio: 1.8/1;
+    max-width: 560px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/*Tekwill the BEST*/
+/*Familie*/
+.image-holder {
+    left: 50%;
+    transform: translate(-50%,0%);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    position: relative;
+    max-width: 1440px;
+}
+
+.image-wrap {
+    width: 22.5%;
+    aspect-ratio: 0.6/1;
+    max-width: 300px;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.image-wrap img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+@media(hover:hover) {
+    .image-wrap img {
+        opacity: 0.5;
+    }
+    .image-wrap img:hover {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}
+/*Footer*/
+
+/*Footer*/
+
+.footer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    position: relative;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.icon {
+    font-size: 30px;
+    position: relative;
+    padding-top: 10px;
+}
+
+.icon a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #4B1218;
+    transition: all 0.3s ease;
+}
+
+.icon a:hover {
+    color: #FBD5B2;
+    text-shadow: 0.5px 0.5px 2px black;
+}
+
+.video-wrapper {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+.video {
+    object-fit: cover;
+}
+/*Hamburger Menu*/
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 480px) {
+
+    .title {
+        width: 60%;
+        height: 60%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .since-holder {
+        display: none;
+    }
+    .logo {
+        position: fixed;
+        left: 0;
+        margin: 0;
+    }
+
+    .logo-color {
+        position: fixed;
+        left: 0;
+        margin: 0;
+    }
+
+    .vertical-line {
+        height: 100px;
+    }
+
+    h3  {
+        font-size: 30px;
+        margin: 0;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .about-us-director {
+        display: block;
+        margin: 0;
+    }
+
+    .text-arranger {
+        display: block;
+        width: 90%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0%);
+    }
+
+    .text-arranger p {
+        font-size: 15px;
+    }
+
+
+    .imgnoi {
+        margin-bottom: 20px;
+    }
+
+    .image-wrapper {
+        display: block;
+        height: 50%;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+    }
+
+    .contacte a {
+        font-size: 20px;
+    }
+
+    .terms a {
+        font-size: 20px;
+    }
+
+    .icon {
+        font-size: 20px;
+        padding-top: 15px;
+    }
+
+    .nav-links {
+        position: relative;
+        background-color: #FBD5B2;
+        height: 100vh;
+        margin: 0;
+        width: 200px;
+        z-index: 3;
+        right: -200px;
+        transition: all 1s;
+    }
+
+    .nav-links.show {
+        position: relative;
+        background-color: #4B1218;
+        height: 100vh;
+        margin: 0;
+        width: 200px;
+        z-index: 3;
+        right: 0;
+        transition: all 1s;
+    }
+
+    .nav-links ul li {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .nav-links ul li a {
+        font-size: 35px;
+    }
+
+    /*Hamburger*/
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 45%;
+        transition: z-index 2s step-end;
+    }
+    
+    .horizontal-line {
+        height: 2px;
+        width: 30px;
+        background-color: white;
+        transition: all 0.5s;
+    }
+
+    .hamburger.active {
+        z-index: 5;
+        height: 30px;
+        transition: z-index 2s step-start;
+    }
+
+    .hamburger.active .horizontal-line{
+        transform: rotate(45deg);
+        margin-top: 2px;
+    }
+    .hamburger.active #hl2{
+        transform: rotate(-45deg);
+        margin-top: -2px;
+    }
+    
+    #hl2 {
+        margin-top: 5px;
+    }
+
+    .image-holder {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-wrap {
+        width: 60%;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width:768px) and (min-width:481px)
+{
+    .text-arranger p{
+        font-size: 15px;
+    }
+
+    .since-holder {
+        display: none;
+    }
+
+    .logo {
+        position: fixed;
+        left: 0;
+        margin: 0;
+    }
+
+    .logo-color {
+        position: fixed;
+        left: 0;
+        margin: 0;
+    }
+
+    .nav-links {
+        position: relative;
+        background-color: #FBD5B2;
+        height: 100vh;
+        margin: 0;
+        width: 200px;
+        z-index: 3;
+        right: -200px;
+        transition: all 1s;
+    }
+
+    .nav-links.show {
+        position: relative;
+        background-color: #4B1218;
+        height: 100vh;
+        margin: 0;
+        width: 200px;
+        z-index: 3;
+        right: 0;
+        transition: all 1s;
+    }
+
+    .nav-links ul li {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .nav-links ul li a {
+        font-size: 35px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 45%;
+        transition: z-index 2s step-end;
+    }
+    
+    .horizontal-line {
+        height: 2px;
+        width: 30px;
+        background-color: white;
+        transition: all 0.5s;
+    }
+
+    .hamburger.active {
+        z-index: 5;
+        height: 30px;
+        transition: z-index 2s step-start;
+    }
+
+    .hamburger.active .horizontal-line{
+        transform: rotate(45deg);
+        margin-top: 2px;
+    }
+    .hamburger.active #hl2{
+        transform: rotate(-45deg);
+        margin-top: -2px;
+    }
+    
+    #hl2 {
+        margin-top: 5px;
+    }
+
+    .imgnoi {
+        max-width: 350px;
+    }
+
+    .text-arranger {
+        max-width: 350px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+
+    .text-arranger {
+        max-width: 450px;
+    }
+
+    .text-arranger p {
+        font-size: 19px;
+    }
+
+    .imgnoi {
+        max-width: 450px;
+    }
+}
