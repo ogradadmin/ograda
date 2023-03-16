@@ -586,8 +586,8 @@ a {
     .informatie {
         top: 50%;
         transform: translate(0%,-50%);
-        margin-left: 75px;
-        margin-right: 75px;
+        margin-left: 80px;
+        margin-right: 80px;
         font-size: 13px;
     }
 
