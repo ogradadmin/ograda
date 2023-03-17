@@ -235,7 +235,7 @@ h3 {
     object-fit: cover;
     object-position: 50% center;
     border-radius: 20px;
-    opacity: 0.90;
+    opacity: 0.80;
 }
 
 .img-container {
@@ -587,9 +587,9 @@ a {
     .informatie {
         top: 50%;
         transform: translate(0%,-50%);
-        margin-left: 83px;
-        margin-right: 83px;
+        width: 45%;
         font-size: 13px;
+        font-family: 'Roboto';
     }
 
     .pret {
